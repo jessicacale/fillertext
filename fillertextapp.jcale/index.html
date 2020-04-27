@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style/mainstyles.css">
+    <title>Fill 'er Up Text Generator</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="column1">
+            <form id="type-length-form">
+                <h3>Pick your text type:</h3>
+                <br>
+                <input type="radio" id="lifestyle" name="texttype" value="lifestyle">
+                <label for="lifestyle">Lifestyle</label><br>
+                <input type="radio" id="food" name="texttype" value="food">
+                <label for="food">Food</label><br>
+                <input type="radio" id="creativearts" name="texttype" value="creativearts">
+                <label for="creativearts">Creative Arts</label><br>
+                <input type="radio" id="educational" name="texttype" value="educational">
+                <label for="educational">Educational</label>
+                <br>
+                <br>
+                <br>
+                <h3>Pick your text length:</h3>
+                <br>
+                <input type="radio" id="sentence" name="textlength" value="sentence">
+                <label for="sentence">Sentence</label><br>
+                <input type="radio" id="paragraph" name="textlength" value="paragraph">
+                <label for="paragraph">Paragraph</label><br>
+                <input type="radio" id="paragraphs" name="textlength" value="paragraphs">
+                <label for="paragraphs">Paragraphs</label><br>
+                <input type="radio" id="book" name="textlength" value="book">
+                <label for="book">Give Me a Book</label><br>
+            </form>
+            <button id="generatebutton">GENERATE</button id="generatebutton" >
+        </div>
+        <div class="column2">
+            <div id="nowserving"></div>
+            <div id="servingpanel">
+                <textarea name="servingpanel" id="generatedtext" cols="30" rows="10"></textarea>
+            </div>
+            <button id="copybutton">COPY</button >
+        </div>
+
+    </div>
+
+</body>
+<script type="module" src="scripts/main.js"></script>
+</html>
